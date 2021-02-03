@@ -116,5 +116,3 @@ helpful:
 1. Passes eslint and stylelint (`yarn lint`)
 1. ESLint/Stylelint not manually disabled unless good justification is provided
 1. Commited to git: one commit per bugfix, one commit for the feature
-
-TODO: Provide one-liner to test everything, maybe as a yarn command?
