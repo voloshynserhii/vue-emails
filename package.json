@@ -1,0 +1,44 @@
+{
+  "name": "recital-fe-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
+    "lint": "yarn lint:js && yarn lint:style",
+    "test": "jest",
+    "reqs": "yarn lint:js && yarn lint:style && yarn test"
+  },
+  "dependencies": {
+    "core-js": "*",
+    "nuxt": "*"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "*",
+    "@nuxtjs/eslint-module": "*",
+    "@nuxtjs/stylelint-module": "*",
+    "@nuxtjs/tailwindcss": "*",
+    "@tailwindcss/forms": "*",
+    "@vue/test-utils": "*",
+    "babel-core": "bridge",
+    "babel-eslint": "*",
+    "babel-jest": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-nuxt": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-vue": "*",
+    "jest": "*",
+    "line-awesome": "*",
+    "prettier": "*",
+    "stylelint": "*",
+    "stylelint-config-prettier": "*",
+    "stylelint-config-standard": "*",
+    "tailwindcss": "compat",
+    "vue-jest": "*"
+  }
+}
