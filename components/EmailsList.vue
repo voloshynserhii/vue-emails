@@ -2,8 +2,12 @@
   <!-- `emailsMostRecentFirst` is defined below in the script tag. If you wanted to access the
   emails directly here, it would be like :list="$store.state.emails" -->
   <List :list="emailsMostRecentFirst">
-    <!-- You can ignore this funky assignment. Just know that it makes the right hand side (`email`)
-    available within the template tag -->
+    <!--
+    If you need a way to create a loop in a template, check out the List component.
+
+    You can ignore the funky assignment (`#default=...`) below. Just know that it makes the right
+    hand side (`email`) available within the template tag
+    -->
     <template #default="{ item: email }">
       <Email
         :subject="email.subject"
