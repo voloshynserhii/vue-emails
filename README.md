@@ -98,6 +98,7 @@ can simply modify existing code or copy/paste an existing block of code to accom
 need. However, that's probably impossible to do fully, so the following flexibility might be
 helpful:
 
+- You do _not_ need to implement for performance
 - You do _not_ need to use anything special from Vue. If what you want to do can be accomplished
   using something else (e.g. vanilla JS or CSS) please go ahead.
 - You do _not_ need to use TailwindCSS.
@@ -106,6 +107,7 @@ helpful:
   - You are welcome to use !important to override tailwind so that you don't have to worry about it.
   - See `components/Email.vue` for an example of how to write CSS within a Vue component.
 - You do _not_ need to use any other specific technology in this repo.
+  - And feel free to add any libraries that you're comfortable with to make this easier, e.g. lodash
 - You do _not_ need to worry about tests. We are considering using them for a later version of this
   assessment, but for now they would be too much work.
 
