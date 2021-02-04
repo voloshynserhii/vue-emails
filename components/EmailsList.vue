@@ -32,7 +32,12 @@ export default {
       // Most recent emails first
       // Data comes from store/emails.js
       // FYI: $store is available directly in the template, without using `this.`
-      return this.$store.state.emails.sort((a, b) => b.sentAt - a.sentAt)
+      return this.sortBy(this.$store.state.emails, "sentAt")
+    },
+  },
+  methods: {
+    sortBy(array, attr) {
+      return array.sort((a, b) => b[attr] - a[attr])
     },
   },
 }
