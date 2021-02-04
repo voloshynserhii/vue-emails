@@ -9,6 +9,9 @@
     hand side (`email`) available within the template tag
     -->
     <template #default="{ item: email }">
+      <!--
+      If you want to make a custom component, check out `ComponentTemplate.vue`
+      -->
       <Email
         :subject="email.subject"
         :snippet="email.snippet"

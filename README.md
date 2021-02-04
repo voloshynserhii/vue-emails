@@ -68,6 +68,7 @@ the files are:
   ([component docs](https://vuejs.org/v2/guide/components.html))
   ([single file component docs](https://vuejs.org/v2/guide/single-file-components.html))
   - Components added here are automatically available elsewhere. No need for manual imports.
+  - Check out `ComponentTemplate.vue` for some boilerplate, if you'd like to create your own
 - `store/` - Vuex data store and definitions for mutations to that store.
   ([docs](https://nuxtjs.org/docs/2.x/directory-structure/store))
   - This is seeded with some default data; you can check it to see the

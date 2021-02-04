@@ -1,9 +1,9 @@
 <template>
   <!--
     @click is an example of how to fire a click handler. Note that @ is shorthand for `v-on:`
-    .prevent automatically does an event.preventDefault
+    .stop automatically does an event.stopPropagation
     Docs for events: https://vuejs.org/v2/guide/events.html
-    Docs for .prevent/.stop: https://vuejs.org/v2/guide/events.html#Event-Modifiers
+    Docs for .stop: https://vuejs.org/v2/guide/events.html#Event-Modifiers
     custom-class is an example class, defined at the bottom as an example of defining custom CSS
     Here, `custom-class` is only assigned when the object has been clicked.
     Docs for the :class format: https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
@@ -11,7 +11,7 @@
   <div
     class="flex flex-row w-full cursor-pointer"
     :class="{ 'custom-class': haveIBeenClicked }"
-    @click.prevent="exampleClick"
+    @click.stop="exampleClick"
   >
     <span class="flex flex-col w-6 p-2">
       <!-- only show this span if email is unread -->
