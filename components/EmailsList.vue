@@ -15,11 +15,7 @@
         :from="email.from"
         :date="email.sentAt"
         :is-unread="email.isUnread"
-      >
-        <template #leftIcon>
-          <i class="pr-4 text-xl leading-none la la-email" />
-        </template>
-      </Email>
+      />
     </template>
   </List>
 </template>
