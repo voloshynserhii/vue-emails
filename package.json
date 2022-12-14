@@ -21,7 +21,7 @@
     "@nuxtjs/eslint-config": "*",
     "@nuxtjs/eslint-module": "*",
     "@nuxtjs/stylelint-module": "*",
-    "@nuxtjs/tailwindcss": "*",
+    "@nuxtjs/tailwindcss": "^4",
     "@tailwindcss/forms": "*",
     "@vue/test-utils": "*",
     "babel-core": "bridge",
@@ -38,7 +38,6 @@
     "stylelint": "*",
     "stylelint-config-prettier": "*",
     "stylelint-config-standard": "*",
-    "tailwindcss": "compat",
     "vue-jest": "*"
   }
 }
