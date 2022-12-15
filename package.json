@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "core-js": "*",
-    "nuxt": "*"
+    "nuxt": "~2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "*",
