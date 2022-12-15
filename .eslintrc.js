@@ -3,18 +3,20 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    "jest/globals": true,
   },
   extends: [
     "eslint:recommended",
     "@nuxtjs",
     "prettier",
-    "prettier/vue",
     "plugin:prettier/recommended",
     "plugin:nuxt/recommended",
   ],
-  plugins: ["prettier"],
+  plugins: ["prettier", "jest"],
   // add your custom rules here
   rules: {
     "vue/no-side-effects-in-computed-properties": 0,
+    // Temp disabled for legacy code
+    "vue/multi-word-component-names": 0,
   },
 }
