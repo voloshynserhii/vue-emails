@@ -18,7 +18,7 @@
     "@nuxtjs/eslint-config": "*",
     "@nuxtjs/eslint-module": "*",
     "@nuxtjs/stylelint-module": "*",
-    "@nuxtjs/tailwindcss": "^4",
+    "@nuxtjs/tailwindcss": "*",
     "@tailwindcss/forms": "*",
     "@vue/test-utils": "~1",
     "babel-core": "bridge",
@@ -42,5 +42,8 @@
     "stylelint-config-recommended-vue": "*",
     "stylelint-config-standard": "*",
     "vue-jest": "*"
+  },
+"resolutions": {
+    "@nuxt/kit": "3.0.0-rc.12"
   }
 }
