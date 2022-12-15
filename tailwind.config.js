@@ -1,9 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  // Note that purge is already configured OOTD by @nuxt/tailwind:
-  // https://tailwindcss.nuxtjs.org/tailwind-config#default-configuration
-  purge: [],
   theme: {
     // https://tailwindcss.com/docs/theme#extending-the-default-theme
     extend: {
