@@ -29,7 +29,7 @@ export default {
   computed: {
     emailsMostRecentFirst() {
       if (!this.$store.state.sortEmails) {
-        return this.$store.state.emails
+        return this.unsort(this.$store.state.emails, "sentAt")
       }
 
       // Most recent emails first
@@ -39,6 +39,9 @@ export default {
     },
   },
   methods: {
+    unsort(array, attr) {
+      return array.sort((a, b) => a[attr] - b[attr])
+    },
     sortBy(array, attr) {
       return array.sort((a, b) => b[attr] - a[attr])
     },

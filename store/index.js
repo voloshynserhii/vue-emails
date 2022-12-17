@@ -9,3 +9,5 @@ export const mutations = {
 export const state = () => ({
   sortEmails: false,
 })
+
+export const strict = false
