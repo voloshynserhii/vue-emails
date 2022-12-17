@@ -19,7 +19,7 @@ export default {
       const conversations = {}
       const data = this.$store.state.emails || []
       if (data.length > 0) {
-        data?.forEach((email) => {
+        data.forEach((email) => {
           if (!conversations[email.conversationId]) {
             conversations[email.conversationId] = {
               from: [email.from],

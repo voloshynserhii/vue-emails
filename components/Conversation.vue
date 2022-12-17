@@ -65,7 +65,6 @@ export default {
   },
   methods: {
     showEmails() {
-      console.log(this)
       this.showEmail = !this.showEmail
     },
   },
