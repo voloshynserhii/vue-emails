@@ -251,6 +251,16 @@ export const state = () =>
       isUnread: false,
       conversationId: 5,
     },
+    {
+      id: 25,
+      subject: "Re: Non vel vero sint.",
+      snippet:
+        "Quia ut id. Illum nisi ipsa. Debitis omnis incidunt. Quia ut id. Illum nisi ipsa. Debitis omnis incidunt. Quia ut id. Illum nisi ipsa. Debitis omnis incidunt. Quia ut id. Illum nisi ipsa. Debitis omnis incidunt.",
+      from: "Tonita Ratke",
+      sentAt: "2020-12-21T14:11:47.000Z",
+      isUnread: false,
+      conversationId: 4,
+    },
   ].map((email) => {
     return { ...email, sentAt: new Date(email.sentAt) }
   })

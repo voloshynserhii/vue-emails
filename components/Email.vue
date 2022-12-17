@@ -13,7 +13,7 @@
     :class="{ 'custom-class': haveIBeenClicked }"
     @click.stop="exampleClick"
   >
-    <span class="flex flex-col w-6 p-2">
+    <span class="flex flex-col p-2 custom">
       <!-- only show this span if email is unread -->
       <span v-if="isUnread" class="w-2 h-2 rounded-full bg-mustard" />
     </span>
@@ -93,5 +93,10 @@ Docs on "scoped": https://vue-loader.vuejs.org/guide/scoped-css.html
 */
 .custom-class {
   background: yellow;
+}
+
+.custom {
+  min-width: 1.5rem;
+  max-width: 1.5rem;
 }
 </style>
